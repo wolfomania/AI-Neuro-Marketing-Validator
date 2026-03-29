@@ -1,0 +1,53 @@
+# ── Environment & Secrets ──
+.env
+.env.*
+!.env.example
+
+# ── Claude Code ──
+.claude/
+
+# ── Python ──
+__pycache__/
+*.py[cod]
+*.pyo
+build/
+dist/
+wheels/
+*.egg-info/
+.venv/
+.pytest_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+*.cover
+
+# ── Node / Frontend ──
+node_modules/
+frontend/dist/
+*.local
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# ── OS ──
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# ── IDE ──
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# ── Data / Uploads ──
+uploads/
+results/
+cache/
+*.mp4
+*.avi
+*.mov
+*.mkv

@@ -1,0 +1,1402 @@
+{
+  "V1": {
+    "full_name": "Primary Visual Cortex",
+    "cognitive_functions": ["Primary visual processing", "Edge detection", "Contrast sensitivity"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Indicates strong visual stimulus processing — the ad is visually grabbing attention"
+  },
+  "V2": {
+    "full_name": "Secondary Visual Cortex",
+    "cognitive_functions": ["Visual feature integration", "Contour processing", "Texture discrimination"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The brain is actively processing visual details and patterns in the ad"
+  },
+  "V3": {
+    "full_name": "Third Visual Area",
+    "cognitive_functions": ["Dynamic form processing", "Global motion detection", "Shape perception"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Moving elements and shapes in the ad are being tracked and processed"
+  },
+  "V4": {
+    "full_name": "Fourth Visual Area",
+    "cognitive_functions": ["Color processing", "Shape recognition", "Object constancy"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Color choices and visual forms in the ad are engaging the viewer's brain"
+  },
+  "V3A": {
+    "full_name": "Visual Area V3A",
+    "cognitive_functions": ["Motion processing", "Depth perception", "Stereopsis"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "3D depth cues and motion in the ad are being processed"
+  },
+  "V3B": {
+    "full_name": "Visual Area V3B",
+    "cognitive_functions": ["Motion-defined boundaries", "Depth-from-motion", "Kinetic edge detection"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Moving boundaries and transitions in the ad are capturing visual attention"
+  },
+  "V6": {
+    "full_name": "Visual Area V6",
+    "cognitive_functions": ["Wide-field motion processing", "Self-motion perception", "Optic flow analysis"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Panoramic or sweeping camera movements in the ad are being processed"
+  },
+  "V6A": {
+    "full_name": "Visual Area V6A",
+    "cognitive_functions": ["Visuomotor integration", "Reaching guidance", "Spatial orientation"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad's spatial layout and action-oriented imagery are engaging the viewer"
+  },
+  "V7": {
+    "full_name": "Visual Area V7",
+    "cognitive_functions": ["Spatial attention", "Visual working memory", "Attentive visual tracking"],
+    "category": "attention",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is actively attending to and tracking visual elements in the ad"
+  },
+  "V8": {
+    "full_name": "Visual Area V8",
+    "cognitive_functions": ["Color perception", "High-level color processing", "Color constancy"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad's color palette is strongly engaging the brain's color processing areas"
+  },
+  "MT": {
+    "full_name": "Middle Temporal Visual Area",
+    "cognitive_functions": ["Motion perception", "Speed estimation", "Direction selectivity"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Motion and movement in the ad are highly salient to the viewer"
+  },
+  "MST": {
+    "full_name": "Medial Superior Temporal Area",
+    "cognitive_functions": ["Complex motion analysis", "Optic flow processing", "Smooth pursuit eye movements"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Complex movement patterns and camera motion in the ad are engaging the viewer"
+  },
+  "V4t": {
+    "full_name": "Visual Area V4t (Temporal)",
+    "cognitive_functions": ["Motion-selective processing", "Saccade target selection", "Attention to motion"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Animated or moving elements in the ad are drawing eye movements"
+  },
+  "FST": {
+    "full_name": "Fundus of Superior Temporal Sulcus",
+    "cognitive_functions": ["3D motion perception", "Shape-from-motion", "Complex optic flow"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Three-dimensional and complex motion effects in the ad are being processed"
+  },
+  "LO1": {
+    "full_name": "Lateral Occipital Area 1",
+    "cognitive_functions": ["Object recognition", "Shape processing", "Figure-ground segregation"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Products and objects in the ad are being recognized and distinguished"
+  },
+  "LO2": {
+    "full_name": "Lateral Occipital Area 2",
+    "cognitive_functions": ["Object perception", "Complex shape analysis", "Object categorization"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer's brain is actively categorizing and recognizing objects shown in the ad"
+  },
+  "LO3": {
+    "full_name": "Lateral Occipital Area 3",
+    "cognitive_functions": ["Higher-order object processing", "Scene segmentation", "Visual grouping"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The brain is organizing and grouping visual elements in the ad into meaningful scenes"
+  },
+  "PIT": {
+    "full_name": "Posterior Inferotemporal Cortex",
+    "cognitive_functions": ["Object identification", "Pattern recognition", "Visual categorization"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is identifying and categorizing specific products or brand elements"
+  },
+  "FFC": {
+    "full_name": "Fusiform Face Complex",
+    "cognitive_functions": ["Face recognition", "Face processing", "Individual identification"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Faces in the ad (spokespeople, characters) are being actively processed and recognized"
+  },
+  "VVC": {
+    "full_name": "Ventral Visual Complex",
+    "cognitive_functions": ["High-level visual recognition", "Category-selective processing", "Visual semantics"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The brain is processing the meaning and identity of visual elements in the ad"
+  },
+  "VMV1": {
+    "full_name": "Ventromedial Visual Area 1",
+    "cognitive_functions": ["Scene processing", "Peripheral visual processing", "Spatial layout perception"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The overall scene layout and background of the ad are being processed"
+  },
+  "VMV2": {
+    "full_name": "Ventromedial Visual Area 2",
+    "cognitive_functions": ["Scene recognition", "Place processing", "Environmental context"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The setting and environment shown in the ad are being recognized and processed"
+  },
+  "VMV3": {
+    "full_name": "Ventromedial Visual Area 3",
+    "cognitive_functions": ["Scene categorization", "Contextual visual processing", "Spatial scene analysis"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The brain is categorizing the type of scene or environment depicted in the ad"
+  },
+  "A1": {
+    "full_name": "Primary Auditory Cortex",
+    "cognitive_functions": ["Sound processing", "Frequency analysis", "Tone detection"],
+    "category": "auditory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad's audio (music, voiceover, sound effects) is being actively processed"
+  },
+  "A4": {
+    "full_name": "Auditory Area 4",
+    "cognitive_functions": ["Complex sound processing", "Spectral analysis", "Auditory pattern recognition"],
+    "category": "auditory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Complex audio patterns like music or layered soundscapes in the ad are engaging the brain"
+  },
+  "A5": {
+    "full_name": "Auditory Area 5",
+    "cognitive_functions": ["Auditory association", "Sound categorization", "Auditory object recognition"],
+    "category": "auditory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is recognizing and categorizing sounds in the ad (e.g., jingles, brand sounds)"
+  },
+  "MBelt": {
+    "full_name": "Medial Belt of Auditory Cortex",
+    "cognitive_functions": ["Sound localization", "Frequency modulation processing", "Auditory attention"],
+    "category": "auditory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Spatial audio cues in the ad are drawing the viewer's auditory attention"
+  },
+  "LBelt": {
+    "full_name": "Lateral Belt of Auditory Cortex",
+    "cognitive_functions": ["Complex sound analysis", "Vocalization processing", "Harmonic processing"],
+    "category": "auditory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Speech and music harmonics in the ad are being processed in detail"
+  },
+  "PBelt": {
+    "full_name": "Posterior Belt of Auditory Cortex",
+    "cognitive_functions": ["Sound source localization", "Spatial hearing", "Auditory scene analysis"],
+    "category": "auditory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The brain is mapping where sounds are coming from in the ad's audio landscape"
+  },
+  "RI": {
+    "full_name": "Retroinsular Cortex",
+    "cognitive_functions": ["Auditory-somatosensory integration", "Vestibular processing", "Sound-touch binding"],
+    "category": "auditory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad's audio is triggering cross-sensory experiences (e.g., feeling the bass)"
+  },
+  "STGa": {
+    "full_name": "Superior Temporal Gyrus Anterior",
+    "cognitive_functions": ["Voice processing", "Speech melody (prosody)", "Auditory object formation"],
+    "category": "auditory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The voiceover or spoken elements in the ad are engaging voice-processing circuits"
+  },
+  "STSdp": {
+    "full_name": "Superior Temporal Sulcus Dorsal Posterior",
+    "cognitive_functions": ["Audiovisual integration", "Biological motion perception", "Speech processing"],
+    "category": "language",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The brain is integrating what the viewer sees and hears in the ad simultaneously"
+  },
+  "STSda": {
+    "full_name": "Superior Temporal Sulcus Dorsal Anterior",
+    "cognitive_functions": ["Social perception", "Voice identity processing", "Narrative comprehension"],
+    "category": "language",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is processing the social and narrative elements of the ad's story"
+  },
+  "STSvp": {
+    "full_name": "Superior Temporal Sulcus Ventral Posterior",
+    "cognitive_functions": ["Face and body movement perception", "Social cue detection", "Lip reading"],
+    "category": "language",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is reading social cues from people's faces and body language in the ad"
+  },
+  "STSva": {
+    "full_name": "Superior Temporal Sulcus Ventral Anterior",
+    "cognitive_functions": ["Social cognition", "Intention understanding", "Emotional voice processing"],
+    "category": "social",
+    "emotional_valence": "mixed",
+    "marketing_relevance": "The viewer is interpreting the intentions and emotions of characters in the ad"
+  },
+  "TA2": {
+    "full_name": "Temporal Area 2 (Auditory Association)",
+    "cognitive_functions": ["Auditory memory", "Sound recognition", "Auditory semantic processing"],
+    "category": "auditory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Familiar sounds or music in the ad are triggering auditory memory associations"
+  },
+  "FEF": {
+    "full_name": "Frontal Eye Fields",
+    "cognitive_functions": ["Saccade control", "Visual search", "Top-down spatial attention"],
+    "category": "attention",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is actively scanning and directing their gaze across the ad"
+  },
+  "IFJa": {
+    "full_name": "Inferior Frontal Junction Anterior",
+    "cognitive_functions": ["Cognitive control", "Task switching", "Attentional updating"],
+    "category": "attention",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad is triggering active cognitive engagement and attention shifts"
+  },
+  "IFJp": {
+    "full_name": "Inferior Frontal Junction Posterior",
+    "cognitive_functions": ["Working memory updating", "Stimulus-driven attention", "Cognitive flexibility"],
+    "category": "attention",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "New information in the ad is capturing attention and being held in working memory"
+  },
+  "IFSa": {
+    "full_name": "Inferior Frontal Sulcus Anterior",
+    "cognitive_functions": ["Verbal working memory", "Language control", "Semantic retrieval"],
+    "category": "language",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is actively processing and retaining the ad's verbal messaging"
+  },
+  "IFSp": {
+    "full_name": "Inferior Frontal Sulcus Posterior",
+    "cognitive_functions": ["Spatial working memory", "Attention control", "Multi-item maintenance"],
+    "category": "attention",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is maintaining and manipulating multiple elements from the ad in mind"
+  },
+  "7Am": {
+    "full_name": "Area 7Am (Medial)",
+    "cognitive_functions": ["Visuospatial attention", "Reaching planning", "Spatial awareness"],
+    "category": "attention",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad's spatial layout is engaging the viewer's attention and action planning"
+  },
+  "7Pm": {
+    "full_name": "Area 7Pm (Posterior Medial)",
+    "cognitive_functions": ["Spatial reasoning", "Mental imagery", "Self-referential spatial processing"],
+    "category": "spatial",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is mentally navigating or imagining themselves in the ad's scenario"
+  },
+  "7PL": {
+    "full_name": "Area 7PL (Posterolateral)",
+    "cognitive_functions": ["Visuospatial integration", "Object-directed attention", "Spatial coordination"],
+    "category": "attention",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is coordinating attention between multiple objects shown in the ad"
+  },
+  "7AL": {
+    "full_name": "Area 7AL (Anterolateral)",
+    "cognitive_functions": ["Reach planning", "Hand-eye coordination", "Grasp preparation"],
+    "category": "attention",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad may be triggering the desire to reach for or interact with the product"
+  },
+  "LIPv": {
+    "full_name": "Lateral Intraparietal Ventral",
+    "cognitive_functions": ["Saccade planning", "Visual attention priority mapping", "Decision-related attention"],
+    "category": "attention",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is prioritizing where to look next in the ad, suggesting high visual interest"
+  },
+  "LIPd": {
+    "full_name": "Lateral Intraparietal Dorsal",
+    "cognitive_functions": ["Attentional priority", "Evidence accumulation", "Perceptual decision-making"],
+    "category": "attention",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is actively deciding and evaluating what they're seeing in the ad"
+  },
+  "VIP": {
+    "full_name": "Ventral Intraparietal Area",
+    "cognitive_functions": ["Multisensory integration", "Heading perception", "Near-space processing"],
+    "category": "attention",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad is creating an immersive multisensory experience for the viewer"
+  },
+  "AIP": {
+    "full_name": "Anterior Intraparietal Area",
+    "cognitive_functions": ["Grasp planning", "Object shape for action", "Tool use cognition"],
+    "category": "attention",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is mentally engaging with how to use or hold the product shown"
+  },
+  "MIP": {
+    "full_name": "Medial Intraparietal Area",
+    "cognitive_functions": ["Reach planning", "Visuomotor transformation", "Spatial goal encoding"],
+    "category": "attention",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad is triggering action-oriented spatial processing — the viewer imagines interacting"
+  },
+  "25": {
+    "full_name": "Subgenual Cingulate Cortex (Area 25)",
+    "cognitive_functions": ["Mood regulation", "Autonomic emotional responses", "Sadness processing"],
+    "category": "emotional",
+    "emotional_valence": "negative",
+    "marketing_relevance": "The ad is evoking deep emotional responses, possibly sadness or empathy"
+  },
+  "OFC": {
+    "full_name": "Orbitofrontal Cortex",
+    "cognitive_functions": ["Reward valuation", "Decision-making", "Pleasure and preference encoding"],
+    "category": "emotional",
+    "emotional_valence": "positive",
+    "marketing_relevance": "The viewer is evaluating the ad's offer as rewarding — strong purchase intent signal"
+  },
+  "pOFC": {
+    "full_name": "Posterior Orbitofrontal Cortex",
+    "cognitive_functions": ["Sensory pleasure evaluation", "Taste and smell valuation", "Hedonic assessment"],
+    "category": "emotional",
+    "emotional_valence": "positive",
+    "marketing_relevance": "The ad is triggering sensory pleasure associations — effective for food, luxury, or lifestyle products"
+  },
+  "10r": {
+    "full_name": "Frontopolar Area 10r (Rostral)",
+    "cognitive_functions": ["Prospective memory", "Future thinking", "Abstract goal management"],
+    "category": "executive",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is thinking about future actions or plans related to the ad's message"
+  },
+  "10v": {
+    "full_name": "Frontopolar Area 10v (Ventral)",
+    "cognitive_functions": ["Reward-based decision-making", "Value comparison", "Social reward processing"],
+    "category": "emotional",
+    "emotional_valence": "positive",
+    "marketing_relevance": "The viewer is comparing the value proposition and finding it socially or personally rewarding"
+  },
+  "a24": {
+    "full_name": "Anterior Cingulate Area 24",
+    "cognitive_functions": ["Emotional conflict monitoring", "Pain processing", "Empathic distress"],
+    "category": "emotional",
+    "emotional_valence": "negative",
+    "marketing_relevance": "The ad is creating emotional tension or conflict that engages the viewer"
+  },
+  "p24": {
+    "full_name": "Posterior Area 24 (Cingulate)",
+    "cognitive_functions": ["Emotional regulation", "Autonomic control", "Visceral emotional response"],
+    "category": "emotional",
+    "emotional_valence": "mixed",
+    "marketing_relevance": "The ad is triggering gut-level emotional responses that the brain is actively processing"
+  },
+  "s32": {
+    "full_name": "Subgenual Area 32",
+    "cognitive_functions": ["Emotional appraisal", "Autonomic regulation", "Affective processing"],
+    "category": "emotional",
+    "emotional_valence": "mixed",
+    "marketing_relevance": "The ad is generating automatic emotional appraisals — the viewer is feeling something"
+  },
+  "a32": {
+    "full_name": "Anterior Area 32 (Pregenual Cingulate)",
+    "cognitive_functions": ["Emotion regulation", "Social cognition", "Empathy"],
+    "category": "emotional",
+    "emotional_valence": "mixed",
+    "marketing_relevance": "The viewer is empathizing with characters or emotionally engaging with the ad's narrative"
+  },
+  "p32": {
+    "full_name": "Posterior Area 32 (Cingulate)",
+    "cognitive_functions": ["Error monitoring", "Conflict detection", "Behavioral adjustment"],
+    "category": "executive",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is evaluating whether the ad's message conflicts with their expectations"
+  },
+  "EC": {
+    "full_name": "Entorhinal Cortex",
+    "cognitive_functions": ["Memory encoding", "Spatial memory", "Grid cell navigation"],
+    "category": "memory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad's content is being encoded into long-term memory — strong recall potential"
+  },
+  "PeEc": {
+    "full_name": "Perirhinal Ectorhinal Cortex",
+    "cognitive_functions": ["Familiarity recognition", "Object memory", "Semantic memory encoding"],
+    "category": "memory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is forming familiarity with the brand or product — building recognition"
+  },
+  "H": {
+    "full_name": "Hippocampus",
+    "cognitive_functions": ["Episodic memory formation", "Spatial mapping", "Memory consolidation"],
+    "category": "memory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad is creating memorable experiences that will be stored as lasting memories"
+  },
+  "PreS": {
+    "full_name": "Presubiculum",
+    "cognitive_functions": ["Spatial orientation", "Head direction processing", "Scene memory"],
+    "category": "memory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad's environmental scenes are being encoded into spatial memory"
+  },
+  "PHA1": {
+    "full_name": "Parahippocampal Area 1",
+    "cognitive_functions": ["Scene recognition", "Contextual memory", "Place memory"],
+    "category": "memory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Scenes and locations in the ad are being processed for memory storage"
+  },
+  "PHA2": {
+    "full_name": "Parahippocampal Area 2",
+    "cognitive_functions": ["Contextual associations", "Spatial context processing", "Scene-object binding"],
+    "category": "memory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The brain is linking products to the scenes and contexts shown in the ad"
+  },
+  "PHA3": {
+    "full_name": "Parahippocampal Area 3",
+    "cognitive_functions": ["Scene layout processing", "Topographical memory", "Landmark recognition"],
+    "category": "memory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is recognizing and remembering the settings and landmarks in the ad"
+  },
+  "44": {
+    "full_name": "Broca's Area (Pars Opercularis)",
+    "cognitive_functions": ["Speech production", "Syntactic processing", "Verbal working memory"],
+    "category": "language",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is mentally rehearsing or processing the ad's spoken or written language"
+  },
+  "45": {
+    "full_name": "Broca's Area (Pars Triangularis)",
+    "cognitive_functions": ["Semantic processing", "Language comprehension", "Verbal fluency"],
+    "category": "language",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad's messaging is being deeply comprehended and its meaning is being extracted"
+  },
+  "STV": {
+    "full_name": "Superior Temporal Voice Area",
+    "cognitive_functions": ["Voice-selective processing", "Speaker recognition", "Vocal emotion decoding"],
+    "category": "language",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The voiceover artist or character voices in the ad are being specifically processed"
+  },
+  "TPOJ1": {
+    "full_name": "Temporoparietal-Occipital Junction Area 1",
+    "cognitive_functions": ["Multisensory integration", "Language-vision binding", "Spatial language"],
+    "category": "language",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The brain is integrating the ad's visual and linguistic information together"
+  },
+  "TPOJ2": {
+    "full_name": "Temporoparietal-Occipital Junction Area 2",
+    "cognitive_functions": ["Audiovisual speech integration", "Reading", "Cross-modal binding"],
+    "category": "language",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Written text and spoken words in the ad are being processed and integrated"
+  },
+  "TPOJ3": {
+    "full_name": "Temporoparietal-Occipital Junction Area 3",
+    "cognitive_functions": ["Semantic integration", "Discourse comprehension", "Narrative processing"],
+    "category": "language",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is following and comprehending the ad's narrative storyline"
+  },
+  "PSL": {
+    "full_name": "Perisylvian Language Area",
+    "cognitive_functions": ["Phonological processing", "Auditory-motor speech mapping", "Verbal repetition"],
+    "category": "language",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is internally rehearsing or repeating the ad's slogans or key phrases"
+  },
+  "4": {
+    "full_name": "Primary Motor Cortex",
+    "cognitive_functions": ["Voluntary movement execution", "Fine motor control", "Motor output"],
+    "category": "motor",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad is triggering motor simulation — the viewer imagines performing an action shown"
+  },
+  "3a": {
+    "full_name": "Somatosensory Area 3a",
+    "cognitive_functions": ["Proprioception", "Joint position sense", "Deep pressure processing"],
+    "category": "somatosensory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad is evoking bodily sensations — the viewer imagines how something feels physically"
+  },
+  "3b": {
+    "full_name": "Primary Somatosensory Cortex (Area 3b)",
+    "cognitive_functions": ["Touch processing", "Tactile discrimination", "Texture perception"],
+    "category": "somatosensory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is imagining the tactile feel of the product shown in the ad"
+  },
+  "1": {
+    "full_name": "Somatosensory Area 1",
+    "cognitive_functions": ["Texture perception", "Surface discrimination", "Fine touch"],
+    "category": "somatosensory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad is engaging the sense of touch — the viewer mentally feels the product's texture"
+  },
+  "2": {
+    "full_name": "Somatosensory Area 2",
+    "cognitive_functions": ["Shape perception by touch", "Object manipulation sense", "Tactile object recognition"],
+    "category": "somatosensory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is mentally grasping or handling the product seen in the ad"
+  },
+  "6ma": {
+    "full_name": "Supplementary Motor Area (Area 6ma)",
+    "cognitive_functions": ["Movement planning", "Bimanual coordination", "Sequential motor actions"],
+    "category": "motor",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad is triggering motor planning — the viewer imagines using the product"
+  },
+  "6mp": {
+    "full_name": "Presupplementary Motor Area (Area 6mp)",
+    "cognitive_functions": ["Motor sequence learning", "Action initiation", "Temporal motor planning"],
+    "category": "motor",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad is prompting the viewer to mentally prepare for an action (e.g., buying)"
+  },
+  "6d": {
+    "full_name": "Dorsal Premotor Cortex (Area 6d)",
+    "cognitive_functions": ["Reach planning", "Visuomotor mapping", "Conditional motor responses"],
+    "category": "motor",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer's brain is mapping visual information to potential actions"
+  },
+  "6v": {
+    "full_name": "Ventral Premotor Cortex (Area 6v)",
+    "cognitive_functions": ["Grasp planning", "Object-oriented actions", "Mirror neuron activity"],
+    "category": "motor",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is mirroring actions seen in the ad through motor simulation"
+  },
+  "6a": {
+    "full_name": "Premotor Area 6a",
+    "cognitive_functions": ["Action planning", "Motor preparation", "Spatial motor coding"],
+    "category": "motor",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad is engaging the viewer's action planning system"
+  },
+  "6r": {
+    "full_name": "Rostral Premotor Area (Area 6r)",
+    "cognitive_functions": ["Orofacial motor control", "Speech motor planning", "Swallowing"],
+    "category": "motor",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer may be subvocally rehearsing slogans or imagining taste/eating (food ads)"
+  },
+  "8BM": {
+    "full_name": "Area 8BM (Medial Frontal Eye Field)",
+    "cognitive_functions": ["Eye movement control", "Visual attention direction", "Saccade inhibition"],
+    "category": "motor",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is controlling their gaze to focus on specific elements of the ad"
+  },
+  "8C": {
+    "full_name": "Area 8C (Caudal Prefrontal)",
+    "cognitive_functions": ["Attention shifting", "Response selection", "Working memory maintenance"],
+    "category": "attention",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is actively selecting and attending to key information in the ad"
+  },
+  "8Av": {
+    "full_name": "Area 8Av (Ventral Prefrontal Eye Field)",
+    "cognitive_functions": ["Spatial working memory", "Attentional control", "Visual search strategy"],
+    "category": "executive",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is using strategic attention to process the ad's visual information"
+  },
+  "10d": {
+    "full_name": "Frontopolar Area 10d (Dorsal)",
+    "cognitive_functions": ["Metacognition", "Self-reflection", "Future planning"],
+    "category": "social",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is reflecting on themselves in relation to the ad's message"
+  },
+  "31a": {
+    "full_name": "Area 31a (Anterior Posterior Cingulate)",
+    "cognitive_functions": ["Self-referential processing", "Autobiographical memory", "Internal mentation"],
+    "category": "social",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad is triggering personal memories or self-reflection in the viewer"
+  },
+  "31pd": {
+    "full_name": "Area 31pd (Posterior Dorsal Cingulate)",
+    "cognitive_functions": ["Episodic memory retrieval", "Self-referential thought", "Default mode processing"],
+    "category": "social",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is connecting the ad's content to their own life experiences"
+  },
+  "31pv": {
+    "full_name": "Area 31pv (Posterior Ventral Cingulate)",
+    "cognitive_functions": ["Memory-guided decisions", "Value-based recall", "Emotional memory integration"],
+    "category": "social",
+    "emotional_valence": "mixed",
+    "marketing_relevance": "The ad is linking to the viewer's emotional memories and personal values"
+  },
+  "POS1": {
+    "full_name": "Parieto-Occipital Sulcus Area 1",
+    "cognitive_functions": ["Visual scene processing", "Spatial orientation", "Navigation"],
+    "category": "spatial",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is mentally navigating the spatial environment depicted in the ad"
+  },
+  "POS2": {
+    "full_name": "Parieto-Occipital Sulcus Area 2",
+    "cognitive_functions": ["Visuospatial processing", "Landmark-based navigation", "Scene perception"],
+    "category": "spatial",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad's spatial setting is being processed and mapped by the viewer's brain"
+  },
+  "d23ab": {
+    "full_name": "Dorsal Area 23ab (Posterior Cingulate)",
+    "cognitive_functions": ["Self-referential processing", "Episodic memory", "Mind wandering"],
+    "category": "social",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad is activating the viewer's sense of self — they are relating the content to their identity"
+  },
+  "v23ab": {
+    "full_name": "Ventral Area 23ab (Posterior Cingulate)",
+    "cognitive_functions": ["Autobiographical memory", "Emotional significance assessment", "Default mode"],
+    "category": "social",
+    "emotional_valence": "mixed",
+    "marketing_relevance": "The ad is connecting with the viewer's personal history and emotional memories"
+  },
+  "RSC": {
+    "full_name": "Retrosplenial Cortex",
+    "cognitive_functions": ["Spatial memory", "Scene recognition", "Episodic memory retrieval"],
+    "category": "memory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad's scenes are triggering spatial memory associations and familiar contexts"
+  },
+  "8BL": {
+    "full_name": "Area 8BL (Lateral Frontal)",
+    "cognitive_functions": ["Working memory", "Attentional control", "Response inhibition"],
+    "category": "executive",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is actively holding and manipulating the ad's information in mind"
+  },
+  "8Ad": {
+    "full_name": "Area 8Ad (Dorsal Prefrontal)",
+    "cognitive_functions": ["Spatial working memory", "Executive attention", "Goal-directed behavior"],
+    "category": "executive",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is directing focused attention to process the ad's key messages"
+  },
+  "9m": {
+    "full_name": "Medial Prefrontal Area 9m",
+    "cognitive_functions": ["Self-referential judgment", "Theory of mind", "Social evaluation"],
+    "category": "executive",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is judging the ad's content from a personal and social perspective"
+  },
+  "9p": {
+    "full_name": "Posterior Prefrontal Area 9p",
+    "cognitive_functions": ["Cognitive control", "Working memory", "Sustained attention"],
+    "category": "executive",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is sustaining attention and cognitive focus on the ad"
+  },
+  "9a": {
+    "full_name": "Anterior Prefrontal Area 9a",
+    "cognitive_functions": ["Abstract reasoning", "Prospective memory", "High-level planning"],
+    "category": "executive",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is thinking abstractly about the ad's message and planning future action"
+  },
+  "46": {
+    "full_name": "Dorsolateral Prefrontal Cortex (Area 46)",
+    "cognitive_functions": ["Working memory", "Executive planning", "Decision-making"],
+    "category": "executive",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is actively deliberating — a key signal for purchase decision processing"
+  },
+  "p9-46v": {
+    "full_name": "Posterior Ventral Area 9-46v",
+    "cognitive_functions": ["Cognitive flexibility", "Rule switching", "Response monitoring"],
+    "category": "executive",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is flexibly processing changing information and scenarios in the ad"
+  },
+  "a9-46v": {
+    "full_name": "Anterior Ventral Area 9-46v",
+    "cognitive_functions": ["Goal maintenance", "Multi-task coordination", "Branching cognition"],
+    "category": "executive",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is maintaining the ad's key message while processing multiple elements"
+  },
+  "i6-8": {
+    "full_name": "Intermediate Frontal Area 6-8",
+    "cognitive_functions": ["Motor-cognitive integration", "Response preparation", "Attentional priming"],
+    "category": "executive",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is preparing a response to the ad's call to action"
+  },
+  "s6-8": {
+    "full_name": "Superior Frontal Area 6-8",
+    "cognitive_functions": ["Executive motor planning", "Cognitive-motor coordination", "Task preparation"],
+    "category": "executive",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is mentally preparing to act on what they see in the ad"
+  },
+  "PGp": {
+    "full_name": "Area PGp (Angular Gyrus Posterior)",
+    "cognitive_functions": ["Semantic processing", "Episodic memory retrieval", "Spatial attention"],
+    "category": "language",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is retrieving meaning and context associated with the ad's content"
+  },
+  "PGs": {
+    "full_name": "Area PGs (Angular Gyrus Superior)",
+    "cognitive_functions": ["Conceptual integration", "Discourse comprehension", "Narrative understanding"],
+    "category": "language",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is deeply understanding and integrating the ad's story and message"
+  },
+  "PGi": {
+    "full_name": "Area PGi (Angular Gyrus Inferior)",
+    "cognitive_functions": ["Number processing", "Logical reasoning", "Abstract conceptualization"],
+    "category": "language",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is processing numerical claims or logical arguments in the ad"
+  },
+  "PFm": {
+    "full_name": "Area PFm (Supramarginal Gyrus)",
+    "cognitive_functions": ["Phonological processing", "Verbal short-term memory", "Articulatory planning"],
+    "category": "language",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is internally sounding out or rehearsing words from the ad"
+  },
+  "PF": {
+    "full_name": "Area PF (Supramarginal Gyrus Anterior)",
+    "cognitive_functions": ["Somatosensory association", "Tool use understanding", "Action observation"],
+    "category": "somatosensory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is processing how objects in the ad are being used or could be used"
+  },
+  "PFop": {
+    "full_name": "Area PFop (Supramarginal Opercular)",
+    "cognitive_functions": ["Tactile attention", "Somatosensory integration", "Pain empathy"],
+    "category": "somatosensory",
+    "emotional_valence": "mixed",
+    "marketing_relevance": "The viewer is empathizing with physical sensations depicted in the ad"
+  },
+  "PFt": {
+    "full_name": "Area PFt (Supramarginal Gyrus Posterior)",
+    "cognitive_functions": ["Action understanding", "Imitation", "Mirror neuron function"],
+    "category": "motor",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is mentally imitating or mirroring actions shown in the ad"
+  },
+  "IP0": {
+    "full_name": "Intraparietal Area 0",
+    "cognitive_functions": ["Visual-spatial processing", "Number sense", "Magnitude estimation"],
+    "category": "spatial",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is processing spatial relationships and quantities shown in the ad"
+  },
+  "IP1": {
+    "full_name": "Intraparietal Area 1",
+    "cognitive_functions": ["Numerosity processing", "Spatial attention", "Visual working memory"],
+    "category": "spatial",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Numbers, prices, or quantities in the ad are engaging numerical processing"
+  },
+  "IP2": {
+    "full_name": "Intraparietal Area 2",
+    "cognitive_functions": ["Visuospatial attention", "Magnitude comparison", "Abstract quantity"],
+    "category": "spatial",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is comparing sizes, amounts, or values presented in the ad"
+  },
+  "DVT": {
+    "full_name": "Dorsal Visual Transitional Area",
+    "cognitive_functions": ["Visual-vestibular integration", "Self-motion perception", "Spatial orientation"],
+    "category": "spatial",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Camera movements or immersive perspectives in the ad are creating a sense of self-motion"
+  },
+  "ProS": {
+    "full_name": "Prostriate Area",
+    "cognitive_functions": ["Peripheral vision processing", "Fast visual processing", "Motion in periphery"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Peripheral visual elements in the ad are being rapidly processed"
+  },
+  "PHT": {
+    "full_name": "Posterior Temporal Area PHT",
+    "cognitive_functions": ["Visual object recognition", "Cross-modal integration", "Category processing"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is categorizing and integrating visual objects seen in the ad"
+  },
+  "TE1a": {
+    "full_name": "Temporal Area TE1a (Anterior)",
+    "cognitive_functions": ["Object recognition", "Visual semantics", "Category-selective response"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is recognizing specific objects and their semantic categories in the ad"
+  },
+  "TE1m": {
+    "full_name": "Temporal Area TE1m (Middle)",
+    "cognitive_functions": ["Face and object processing", "Visual memory", "Feature binding"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Faces and key objects in the ad are being bound together into coherent representations"
+  },
+  "TE1p": {
+    "full_name": "Temporal Area TE1p (Posterior)",
+    "cognitive_functions": ["Visual pattern processing", "Shape analysis", "Complex feature extraction"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Complex visual patterns and shapes in the ad are being analyzed"
+  },
+  "TE2a": {
+    "full_name": "Temporal Area TE2a (Anterior)",
+    "cognitive_functions": ["Semantic object knowledge", "Conceptual processing", "Object naming"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is naming and conceptualizing products and objects in the ad"
+  },
+  "TE2p": {
+    "full_name": "Temporal Area TE2p (Posterior)",
+    "cognitive_functions": ["Visual association", "Object memory", "Feature integration"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is forming associations between visual elements in the ad"
+  },
+  "TGd": {
+    "full_name": "Temporal Polar Area TGd (Dorsal)",
+    "cognitive_functions": ["Semantic memory", "Social knowledge", "Person knowledge"],
+    "category": "social",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is accessing knowledge about people, brands, or social concepts in the ad"
+  },
+  "TGv": {
+    "full_name": "Temporal Polar Area TGv (Ventral)",
+    "cognitive_functions": ["Emotional semantics", "Social-emotional processing", "Emotional memory"],
+    "category": "social",
+    "emotional_valence": "mixed",
+    "marketing_relevance": "The ad is triggering emotionally-laden memories and social-emotional associations"
+  },
+  "TF": {
+    "full_name": "Temporal Fusiform Area TF",
+    "cognitive_functions": ["High-level visual processing", "Face-scene binding", "Contextual recognition"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is binding faces to scenes, creating integrated memories of the ad"
+  },
+  "Ig": {
+    "full_name": "Insular Granular Cortex",
+    "cognitive_functions": ["Interoception", "Disgust processing", "Taste perception"],
+    "category": "emotional",
+    "emotional_valence": "negative",
+    "marketing_relevance": "The ad is triggering internal body sensations — potentially disgust or strong taste associations"
+  },
+  "FOP1": {
+    "full_name": "Frontal Operculum Area 1",
+    "cognitive_functions": ["Taste processing", "Gustatory perception", "Oral somatosensation"],
+    "category": "somatosensory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad may be activating taste processing — effective for food and beverage products"
+  },
+  "FOP2": {
+    "full_name": "Frontal Operculum Area 2",
+    "cognitive_functions": ["Speech articulation", "Swallowing control", "Oral motor planning"],
+    "category": "motor",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer may be subvocally rehearsing the ad's message or imagining tasting a product"
+  },
+  "FOP3": {
+    "full_name": "Frontal Operculum Area 3",
+    "cognitive_functions": ["Auditory-motor integration", "Speech monitoring", "Phonological output"],
+    "category": "language",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is processing the ad's spoken language at an articulatory level"
+  },
+  "FOP4": {
+    "full_name": "Frontal Operculum Area 4",
+    "cognitive_functions": ["Interoceptive awareness", "Emotional salience", "Autonomic regulation"],
+    "category": "emotional",
+    "emotional_valence": "mixed",
+    "marketing_relevance": "The ad is triggering awareness of the viewer's own bodily emotional state"
+  },
+  "FOP5": {
+    "full_name": "Frontal Operculum Area 5",
+    "cognitive_functions": ["Cognitive-emotional integration", "Salience detection", "Emotional control"],
+    "category": "emotional",
+    "emotional_valence": "mixed",
+    "marketing_relevance": "The ad is activating emotional control centers — the content is emotionally salient"
+  },
+  "MI": {
+    "full_name": "Middle Insular Cortex",
+    "cognitive_functions": ["Pain processing", "Interoception", "Emotional awareness"],
+    "category": "emotional",
+    "emotional_valence": "negative",
+    "marketing_relevance": "The ad is generating visceral emotional awareness — a strong gut feeling response"
+  },
+  "AI": {
+    "full_name": "Anterior Insular Cortex",
+    "cognitive_functions": ["Emotional awareness", "Empathy", "Salience detection"],
+    "category": "emotional",
+    "emotional_valence": "mixed",
+    "marketing_relevance": "The ad is triggering strong emotional awareness and empathic engagement"
+  },
+  "PI": {
+    "full_name": "Posterior Insular Cortex",
+    "cognitive_functions": ["Pain perception", "Temperature sensing", "Bodily awareness"],
+    "category": "somatosensory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad is engaging bodily sensation processing — physical comfort or discomfort themes"
+  },
+  "Pol1": {
+    "full_name": "Parainsular Area 1",
+    "cognitive_functions": ["Auditory-emotional integration", "Emotional prosody", "Voice emotion"],
+    "category": "auditory",
+    "emotional_valence": "mixed",
+    "marketing_relevance": "The emotional tone of voices and music in the ad is being processed"
+  },
+  "Pol2": {
+    "full_name": "Parainsular Area 2",
+    "cognitive_functions": ["Vestibular processing", "Balance perception", "Spatial orientation"],
+    "category": "somatosensory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Camera tilts or immersive motion in the ad are engaging the balance system"
+  },
+  "OP1": {
+    "full_name": "Parietal Operculum Area 1",
+    "cognitive_functions": ["Secondary somatosensory processing", "Tactile integration", "Pain processing"],
+    "category": "somatosensory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad is engaging higher-level touch processing — the viewer imagines physical sensations"
+  },
+  "OP2-3": {
+    "full_name": "Parietal Operculum Areas 2-3",
+    "cognitive_functions": ["Vestibular cortical processing", "Spatial body schema", "Self-motion perception"],
+    "category": "somatosensory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad's perspective and motion cues are creating a bodily sense of presence"
+  },
+  "OP4": {
+    "full_name": "Parietal Operculum Area 4",
+    "cognitive_functions": ["Somatosensory processing", "Touch attention", "Haptic object recognition"],
+    "category": "somatosensory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is paying attention to tactile qualities of objects shown in the ad"
+  },
+  "52": {
+    "full_name": "Parainsular Area 52",
+    "cognitive_functions": ["Auditory-vestibular integration", "Sound localization", "Spatial hearing"],
+    "category": "auditory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is processing spatial audio cues and sound positioning in the ad"
+  },
+  "PoI1": {
+    "full_name": "Posterior Insular Area 1",
+    "cognitive_functions": ["Pain processing", "Thermal sensation", "Interoceptive processing"],
+    "category": "somatosensory",
+    "emotional_valence": "negative",
+    "marketing_relevance": "The ad is activating visceral sensation circuits — potentially through empathy or discomfort cues"
+  },
+  "PoI2": {
+    "full_name": "Posterior Insular Area 2",
+    "cognitive_functions": ["Auditory-somatosensory integration", "Vibrotactile processing", "Body awareness"],
+    "category": "somatosensory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Sound and physical sensation are being integrated — the ad's audio feels physical"
+  },
+  "5m": {
+    "full_name": "Somatosensory Area 5m (Medial)",
+    "cognitive_functions": ["Body schema representation", "Limb position sense", "Postural awareness"],
+    "category": "somatosensory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is processing body position and posture cues from people in the ad"
+  },
+  "5L": {
+    "full_name": "Somatosensory Area 5L (Lateral)",
+    "cognitive_functions": ["Hand-object interaction", "Sensorimotor integration", "Tactile spatial processing"],
+    "category": "somatosensory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer imagines interacting with products using their hands"
+  },
+  "5mv": {
+    "full_name": "Somatosensory Area 5mv (Medial Ventral)",
+    "cognitive_functions": ["Sensory-motor coordination", "Proprioceptive integration", "Body mapping"],
+    "category": "somatosensory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad is engaging the viewer's sense of body awareness and motor readiness"
+  },
+  "23c": {
+    "full_name": "Cingulate Area 23c",
+    "cognitive_functions": ["Motor-cognitive interface", "Error detection", "Performance monitoring"],
+    "category": "executive",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is monitoring how well the ad matches their expectations"
+  },
+  "23d": {
+    "full_name": "Cingulate Area 23d",
+    "cognitive_functions": ["Visuospatial processing", "Spatial cognition", "Environmental monitoring"],
+    "category": "spatial",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is actively monitoring and processing the ad's spatial environment"
+  },
+  "24dd": {
+    "full_name": "Dorsal Area 24dd (Cingulate Motor)",
+    "cognitive_functions": ["Motor planning", "Cognitive-motor control", "Movement selection"],
+    "category": "motor",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad is prompting motor planning — the viewer considers taking physical action"
+  },
+  "24dv": {
+    "full_name": "Dorsoventral Area 24dv (Cingulate)",
+    "cognitive_functions": ["Reward-guided action", "Motivation", "Effort-reward computation"],
+    "category": "emotional",
+    "emotional_valence": "positive",
+    "marketing_relevance": "The viewer is weighing whether the ad's offer is worth the effort — motivation signal"
+  },
+  "33": {
+    "full_name": "Cingulate Area 33",
+    "cognitive_functions": ["Autonomic regulation", "Visceral sensation", "Emotional arousal"],
+    "category": "emotional",
+    "emotional_valence": "mixed",
+    "marketing_relevance": "The ad is triggering autonomic arousal — the viewer's body is physically responding"
+  },
+  "47l": {
+    "full_name": "Lateral Area 47 (Orbital Frontal)",
+    "cognitive_functions": ["Reward evaluation", "Affective decision-making", "Social reward"],
+    "category": "emotional",
+    "emotional_valence": "positive",
+    "marketing_relevance": "The viewer is evaluating the ad's social and emotional rewards — positive brand perception"
+  },
+  "47m": {
+    "full_name": "Medial Area 47 (Orbital Frontal)",
+    "cognitive_functions": ["Value-based choice", "Outcome prediction", "Reward expectation"],
+    "category": "emotional",
+    "emotional_valence": "positive",
+    "marketing_relevance": "The viewer is predicting positive outcomes from the ad's product or message"
+  },
+  "47s": {
+    "full_name": "Area 47s (Orbital Sulcus)",
+    "cognitive_functions": ["Olfactory processing", "Flavor evaluation", "Hedonic value"],
+    "category": "emotional",
+    "emotional_valence": "positive",
+    "marketing_relevance": "The ad is triggering smell or flavor associations — powerful for food and fragrance ads"
+  },
+  "SFL": {
+    "full_name": "Superior Frontal Language Area",
+    "cognitive_functions": ["Verbal working memory", "Inner speech", "Language production planning"],
+    "category": "language",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is internally talking about or rehearsing the ad's key message"
+  },
+  "55b": {
+    "full_name": "Area 55b (Premotor Language Area)",
+    "cognitive_functions": ["Speech motor planning", "Verbal fluency", "Articulatory coding"],
+    "category": "language",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is preparing to speak about or repeat the ad's verbal content"
+  },
+  "PEF": {
+    "full_name": "Premotor Eye Field",
+    "cognitive_functions": ["Eye movement planning", "Visual scanning", "Gaze control"],
+    "category": "attention",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is planning deliberate eye movements to explore the ad"
+  },
+  "PreCG": {
+    "full_name": "Precentral Gyrus (General Motor)",
+    "cognitive_functions": ["Motor execution", "Motor planning", "Voluntary movement"],
+    "category": "motor",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad is triggering motor system engagement — the viewer prepares to act"
+  },
+  "PosCG": {
+    "full_name": "Postcentral Gyrus (General Sensory)",
+    "cognitive_functions": ["Somatosensory processing", "Touch perception", "Body awareness"],
+    "category": "somatosensory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad is engaging the viewer's sense of touch and body awareness"
+  },
+  "STS": {
+    "full_name": "Superior Temporal Sulcus (General)",
+    "cognitive_functions": ["Social perception", "Biological motion", "Voice processing"],
+    "category": "social",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is processing social cues from people and voices in the ad"
+  },
+  "TPJ": {
+    "full_name": "Temporoparietal Junction",
+    "cognitive_functions": ["Theory of mind", "Perspective-taking", "Social cognition"],
+    "category": "social",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is taking the perspective of characters in the ad — high empathy engagement"
+  },
+  "TE1": {
+    "full_name": "Temporal Area TE1",
+    "cognitive_functions": ["Object recognition", "Visual categorization", "Feature integration"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Products and visual elements in the ad are being recognized and categorized"
+  },
+  "ProM": {
+    "full_name": "Premotor Medial Area",
+    "cognitive_functions": ["Motor sequencing", "Action planning", "Bimanual coordination"],
+    "category": "motor",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad is triggering complex action planning in the viewer"
+  },
+  "43": {
+    "full_name": "Area 43 (Subcentral Area)",
+    "cognitive_functions": ["Gustatory processing", "Oral sensation", "Swallowing"],
+    "category": "somatosensory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad may be activating taste or eating sensations — relevant for food products"
+  },
+  "IPS1": {
+    "full_name": "Intraparietal Sulcus Area 1",
+    "cognitive_functions": ["Visual working memory", "Spatial attention", "Object individuation"],
+    "category": "attention",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is tracking and remembering individual objects shown in the ad"
+  },
+  "a47r": {
+    "full_name": "Anterior Area 47r (Rostral Orbital)",
+    "cognitive_functions": ["Reward prediction", "Social reward processing", "Emotional decision-making"],
+    "category": "emotional",
+    "emotional_valence": "positive",
+    "marketing_relevance": "The viewer is processing anticipated rewards from the product or brand"
+  },
+  "p47r": {
+    "full_name": "Posterior Area 47r",
+    "cognitive_functions": ["Reward comparison", "Value updating", "Preference formation"],
+    "category": "emotional",
+    "emotional_valence": "positive",
+    "marketing_relevance": "The viewer is forming preferences and updating their valuation of the ad's offering"
+  },
+  "Pir": {
+    "full_name": "Piriform Cortex",
+    "cognitive_functions": ["Olfactory processing", "Smell identification", "Odor memory"],
+    "category": "emotional",
+    "emotional_valence": "mixed",
+    "marketing_relevance": "The ad is triggering smell-related memories or associations — powerful for scent-related products"
+  },
+  "AVI": {
+    "full_name": "Anterior Ventral Insular Area",
+    "cognitive_functions": ["Emotional valuation", "Risk assessment", "Gut feelings"],
+    "category": "emotional",
+    "emotional_valence": "mixed",
+    "marketing_relevance": "The viewer is having intuitive gut reactions to the ad — trust and risk assessment"
+  },
+  "AAIC": {
+    "full_name": "Anterior Agranular Insular Complex",
+    "cognitive_functions": ["Emotional arousal", "Autonomic integration", "Affective awareness"],
+    "category": "emotional",
+    "emotional_valence": "mixed",
+    "marketing_relevance": "The ad is generating strong emotional arousal — the viewer feels emotionally engaged"
+  },
+  "p10p": {
+    "full_name": "Posterior Area 10p",
+    "cognitive_functions": ["Relational reasoning", "Analogical thinking", "Abstract comparison"],
+    "category": "executive",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is making comparisons and analogies prompted by the ad's content"
+  },
+  "a10p": {
+    "full_name": "Anterior Area 10p",
+    "cognitive_functions": ["Prospective memory", "Future simulation", "Goal hierarchies"],
+    "category": "executive",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is imagining future scenarios related to the product or service"
+  },
+  "11l": {
+    "full_name": "Orbital Area 11l (Lateral)",
+    "cognitive_functions": ["Reward learning", "Value representation", "Outcome monitoring"],
+    "category": "emotional",
+    "emotional_valence": "positive",
+    "marketing_relevance": "The viewer is learning the reward value associated with the ad's product"
+  },
+  "13l": {
+    "full_name": "Orbital Area 13l",
+    "cognitive_functions": ["Multimodal valuation", "Reward integration", "Sensory pleasure"],
+    "category": "emotional",
+    "emotional_valence": "positive",
+    "marketing_relevance": "The ad is generating integrated pleasure responses across multiple senses"
+  },
+  "a24pr": {
+    "full_name": "Anterior Area 24pr (Pregenual Cingulate)",
+    "cognitive_functions": ["Reward anticipation", "Positive affect", "Approach motivation"],
+    "category": "emotional",
+    "emotional_valence": "positive",
+    "marketing_relevance": "The viewer feels positively motivated to approach the product — a buy signal"
+  },
+  "p24pr": {
+    "full_name": "Posterior Area 24pr (Cingulate)",
+    "cognitive_functions": ["Conflict monitoring", "Error processing", "Behavioral adjustment"],
+    "category": "executive",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is detecting and processing unexpected elements in the ad"
+  },
+  "p32pr": {
+    "full_name": "Posterior Area 32pr (Pregenual)",
+    "cognitive_functions": ["Emotional conflict resolution", "Affective regulation", "Social evaluation"],
+    "category": "emotional",
+    "emotional_valence": "mixed",
+    "marketing_relevance": "The viewer is resolving emotional conflicts about the ad's message or product"
+  },
+  "d32": {
+    "full_name": "Dorsal Area 32",
+    "cognitive_functions": ["Cognitive control", "Response inhibition", "Conflict monitoring"],
+    "category": "executive",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is exercising cognitive control while evaluating the ad's claims"
+  },
+  "8BM_2": {
+    "full_name": "Area 8BM Subdivision 2",
+    "cognitive_functions": ["Supplementary eye field", "Sequential saccade planning", "Visual search"],
+    "category": "attention",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is planning sequential eye movements to explore the ad's content"
+  },
+  "SCEF": {
+    "full_name": "Supplementary and Cingulate Eye Fields",
+    "cognitive_functions": ["Voluntary saccade control", "Conflict-related eye movements", "Gaze monitoring"],
+    "category": "attention",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is voluntarily directing their gaze to key elements in the ad"
+  },
+  "PCV": {
+    "full_name": "Precuneus Visual Area",
+    "cognitive_functions": ["Mental imagery", "Visuospatial processing", "Self-referential thought"],
+    "category": "spatial",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is generating mental images of themselves using the product"
+  },
+  "7m": {
+    "full_name": "Medial Area 7m (Precuneus)",
+    "cognitive_functions": ["Self-awareness", "Mental imagery", "Episodic memory retrieval"],
+    "category": "social",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad is triggering self-referential thinking and personal mental imagery"
+  },
+  "PHA": {
+    "full_name": "Parahippocampal Area (General)",
+    "cognitive_functions": ["Scene processing", "Contextual memory", "Spatial memory"],
+    "category": "memory",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The ad's scenes and contexts are being stored in the viewer's memory system"
+  },
+  "TGdorsal": {
+    "full_name": "Temporal Pole Dorsal",
+    "cognitive_functions": ["Semantic memory", "Social knowledge", "Conceptual association"],
+    "category": "social",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is accessing existing knowledge and associations related to the ad's content"
+  },
+  "STSad": {
+    "full_name": "Superior Temporal Sulcus Anterodorsal",
+    "cognitive_functions": ["Voice identity", "Social attribution", "Biological motion"],
+    "category": "social",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is identifying and attributing traits to people in the ad"
+  },
+  "10pp": {
+    "full_name": "Polar Area 10pp",
+    "cognitive_functions": ["Multi-tasking", "Prospective cognition", "Branching decisions"],
+    "category": "executive",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is considering multiple future actions or decisions prompted by the ad"
+  },
+  "PeS": {
+    "full_name": "Peristriate Area",
+    "cognitive_functions": ["Early visual processing", "Visual field mapping", "Edge processing"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Basic visual features of the ad are being processed at an early stage"
+  },
+  "a9-46d": {
+    "full_name": "Anterior Dorsal Area 9-46d",
+    "cognitive_functions": ["Strategic planning", "Goal representation", "Cognitive branching"],
+    "category": "executive",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is forming strategic thoughts and goals related to the ad's message"
+  },
+  "p9-46d": {
+    "full_name": "Posterior Dorsal Area 9-46d",
+    "cognitive_functions": ["Working memory maintenance", "Rule-based reasoning", "Task management"],
+    "category": "executive",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is holding the ad's key points in working memory and reasoning about them"
+  },
+  "TE2": {
+    "full_name": "Temporal Area TE2",
+    "cognitive_functions": ["Object association", "Visual memory", "Semantic integration"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is forming visual memories and associations for objects in the ad"
+  },
+  "IFa": {
+    "full_name": "Inferior Frontal Area (Anterior)",
+    "cognitive_functions": ["Semantic processing", "Language comprehension", "Inhibitory control"],
+    "category": "language",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is deeply processing the meaning and content of the ad's language"
+  },
+  "IFp": {
+    "full_name": "Inferior Frontal Area (Posterior)",
+    "cognitive_functions": ["Phonological processing", "Syntactic analysis", "Verbal fluency"],
+    "category": "language",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is analyzing the grammatical structure and sound of the ad's language"
+  },
+  "Amc": {
+    "full_name": "Anterior Middle Cingulate",
+    "cognitive_functions": ["Conflict monitoring", "Decision uncertainty", "Effort allocation"],
+    "category": "executive",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is weighing options and allocating mental effort to evaluate the ad"
+  },
+  "TPOJ": {
+    "full_name": "Temporoparietal-Occipital Junction (General)",
+    "cognitive_functions": ["Multisensory integration", "Language-spatial binding", "Attention reorienting"],
+    "category": "language",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The brain is integrating auditory, visual, and spatial information from the ad"
+  },
+  "ProSv": {
+    "full_name": "Prostriate Ventral Area",
+    "cognitive_functions": ["Rapid visual processing", "Peripheral awareness", "Visual alerting"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Rapid visual changes in the ad are triggering alerting responses"
+  },
+  "V3CD": {
+    "full_name": "Visual Area V3CD (Crescent Dorsal)",
+    "cognitive_functions": ["Motion boundary processing", "Contour integration", "Visual segmentation"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "Visual transitions and movement boundaries in the ad are being segmented"
+  },
+  "PIT_d": {
+    "full_name": "Posterior Inferotemporal Dorsal",
+    "cognitive_functions": ["Object recognition", "Visual categorization", "Pattern analysis"],
+    "category": "visual",
+    "emotional_valence": "neutral",
+    "marketing_relevance": "The viewer is categorizing and recognizing visual patterns in the ad"
+  },
+  "OFC_m": {
+    "full_name": "Medial Orbitofrontal Cortex",
+    "cognitive_functions": ["Value judgment", "Moral reasoning", "Personal preference"],
+    "category": "emotional",
+    "emotional_valence": "positive",
+    "marketing_relevance": "The viewer is making personal value judgments about the ad's product or message"
+  }
+}
