@@ -7,9 +7,15 @@ import type {
 
 const API_BASE = '/api'
 
+function authHeaders(): Record<string, string> {
+  const token = localStorage.getItem('nm_access_token')
+  return token ? { Authorization: `Bearer ${token}` } : {}
+}
+
 async function request<T>(url: string, options?: RequestInit): Promise<ApiResponse<T>> {
   try {
-    const response = await fetch(`${API_BASE}${url}`, options)
+    const headers = { ...authHeaders(), ...options?.headers }
+    const response = await fetch(`${API_BASE}${url}`, { ...options, headers })
     const body: unknown = await response.json()
 
     if (!response.ok) {

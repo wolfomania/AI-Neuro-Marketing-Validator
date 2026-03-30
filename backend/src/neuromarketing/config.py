@@ -16,6 +16,8 @@ class Settings(BaseSettings):
     claude_model: str = "claude-sonnet-4-20250514"
     cors_origins: str = "http://localhost:5173"
     use_mock: bool = True
+    access_token: str = ""
+    allowed_ips: str = ""
 
     model_config = {"env_file": ".env", "env_prefix": "NM_"}
 

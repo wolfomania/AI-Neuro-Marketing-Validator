@@ -9,6 +9,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from neuromarketing.api.router import api_router
 from neuromarketing.config import Settings
+from neuromarketing.middleware.access_guard import AccessGuardMiddleware, build_config
 
 logger = logging.getLogger(__name__)
 
@@ -93,6 +94,16 @@ def create_app() -> FastAPI:
         allow_methods=["*"],
         allow_headers=["*"],
     )
+
+    # Access control -- enabled via NM_ACCESS_TOKEN and/or NM_ALLOWED_IPS
+    guard_config = build_config(
+        access_token=settings.access_token,
+        allowed_ips_raw=settings.allowed_ips,
+    )
+    if guard_config.is_enabled:
+        app.add_middleware(AccessGuardMiddleware, config=guard_config)
+        logger.info("Access guard enabled (token=%s, ips=%d)",
+                     bool(guard_config.access_token), len(guard_config.allowed_ips))
 
     app.include_router(api_router)
 
