@@ -51,7 +51,7 @@ class TribeService:
             raise RuntimeError("Model not loaded. Call load_model() first.")
 
         import numpy as np
-        from tribev2.utils import get_hcp_labels, get_topk_rois  # type: ignore[import-untyped]
+        from tribev2.utils import get_hcp_labels  # type: ignore[import-untyped]
 
         model = self._model
 
@@ -62,13 +62,18 @@ class TribeService:
 
         # Step 2: Compute per-vertex mean and ROI summaries
         mean_preds = preds.mean(axis=0)
-        top_k_raw = get_topk_rois(mean_preds, k=self._top_k)
         hcp_labels = get_hcp_labels()
 
         # Step 3: Compute all ROI means
         all_roi_means: dict[str, float] = {}
         for roi_name, vertex_indices in hcp_labels.items():
             all_roi_means[roi_name] = float(mean_preds[vertex_indices].mean())
+
+        # Compute top-K ourselves (tribev2.utils.get_topk_rois breaks on numpy 2.x:
+        # np.array(dict.keys()) becomes 0-d, causing IndexError on slicing).
+        top_k_raw = sorted(
+            all_roi_means.keys(), key=lambda k: all_roi_means[k], reverse=True
+        )[: self._top_k]
 
         # Step 4: Compute percentile ranks
         all_values = sorted(all_roi_means.values())
@@ -136,7 +141,14 @@ class TribeService:
 def _generate_plots(
     mean_preds: "object", output_dir: Path
 ) -> dict[str, str]:
-    """Generate cortical surface map PNGs. Non-fatal on failure."""
+    """Generate cortical surface map PNGs.
+
+    Non-fatal on failure: logs error and returns only successful plots.
+    """
+    import logging
+
+    log = logging.getLogger(__name__)
+
     plots_dir = output_dir / "plots"
     plots_dir.mkdir(parents=True, exist_ok=True)
 
@@ -146,15 +158,23 @@ def _generate_plots(
     try:
         import numpy as np
         from nilearn import datasets, plotting  # type: ignore[import-untyped]
+    except ImportError as exc:
+        log.warning("Plotting libs missing, skipping brain images: %s", exc)
+        return plot_paths
 
-        preds_arr = np.asarray(mean_preds)
-        fsaverage = datasets.load_fsaverage("fsaverage5")
-        n_hemi = len(preds_arr) // 2
+    try:
+        fsaverage = datasets.fetch_surf_fsaverage(mesh="fsaverage5")
+    except Exception as exc:
+        log.warning("Failed to fetch fsaverage5 mesh: %s", exc)
+        return plot_paths
 
-        for view in views:
-            hemi = "left" if "left" in view else "right"
-            view_type = "lateral" if "lateral" in view else "medial"
+    preds_arr = np.asarray(mean_preds)
+    n_hemi = len(preds_arr) // 2
 
+    for view in views:
+        hemi = "left" if "left" in view else "right"
+        view_type = "lateral" if "lateral" in view else "medial"
+        try:
             mesh = fsaverage[f"pial_{hemi}"]
             sulc = fsaverage[f"sulc_{hemi}"]
             data = preds_arr[:n_hemi] if hemi == "left" else preds_arr[n_hemi:]
@@ -173,9 +193,8 @@ def _generate_plots(
             fig.savefig(str(path), dpi=150)
             plotting.close_all()
             plot_paths[view] = str(path)
-    except Exception:
-        # Plotting is non-fatal -- analysis can proceed without it
-        for view in views:
-            plot_paths[view] = ""
+            log.info("Saved plot %s -> %s", view, path)
+        except Exception as exc:
+            log.warning("Plot %s failed: %s", view, exc, exc_info=True)
 
     return plot_paths

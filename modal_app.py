@@ -6,15 +6,15 @@ Usage:
     modal run modal_app.py::download_model   # one-time model weight download
 """
 
+from __future__ import annotations
+
 import logging
 import os
 from pathlib import Path
 
-logger = logging.getLogger(__name__)
-
-import fastapi
-import fastapi.staticfiles
 import modal
+
+logger = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
 # App
@@ -38,8 +38,9 @@ VOLUMES = {
 # Container image
 # ---------------------------------------------------------------------------
 frontend_dist = Path(__file__).parent / "frontend" / "dist"
+backend_src = Path(__file__).parent / "backend" / "src"
 
-image = (
+_base_deps = (
     modal.Image.debian_slim(python_version="3.11")
     .apt_install("ffmpeg")
     .pip_install(
@@ -52,19 +53,43 @@ image = (
         "numpy>=1.24.0",
         "httpx>=0.27.0",
     )
-    .add_local_dir(
-        str(Path(__file__).parent / "backend" / "src"),
-        remote_path="/app/src",
-    )
+)
+
+# add_local_* must come last — no build steps allowed after it
+image = (
+    _base_deps
+    .add_local_dir(str(backend_src), remote_path="/app/src")
     .add_local_dir(str(frontend_dist), remote_path="/assets")
 )
 
-# GPU image adds torch, ML, and tribev2 deps (used only by GPU-enabled functions)
-gpu_image = image.pip_install(
-    "torch>=2.5.0,<2.7.0",
-    "huggingface-hub>=0.20.0",
-    "transformers>=4.40.0",
-    "tribev2[plotting] @ git+https://github.com/facebookresearch/tribev2.git",
+# GPU base: install git (needed for tribev2 git URL), then pip deps,
+# then pre-download spacy model so cold starts don't pay 400MB download.
+_gpu_deps = (
+    _base_deps
+    .apt_install("git")
+    .pip_install(
+        "torch>=2.5.0,<2.7.0",
+        "huggingface-hub>=0.20.0",
+        "transformers>=4.40.0",
+        "tribev2[plotting] @ git+https://github.com/facebookresearch/tribev2.git",
+    )
+    .run_commands(
+        "python -m spacy download en_core_web_lg",
+        # Pre-cache MNE sample data + HCP atlas so cold starts skip 1.6GB download.
+        (
+            "python -c '"
+            "import mne; "
+            "p = str(mne.datasets.sample.data_path()) + \"/subjects\"; "
+            "mne.datasets.fetch_hcp_mmp_parcellation(subjects_dir=p, accept=True)"
+            "'"
+        ),
+    )
+)
+
+gpu_image = (
+    _gpu_deps
+    .add_local_dir(str(backend_src), remote_path="/app/src")
+    .add_local_dir(str(frontend_dist), remote_path="/assets")
 )
 
 MINUTES = 60
@@ -95,8 +120,10 @@ class WebService:
         sys.path.insert(0, "/app/src")
 
     @modal.asgi_app()
-    def web(self) -> fastapi.FastAPI:
+    def web(self) -> object:
         import sys
+
+        import fastapi.staticfiles
 
         sys.path.insert(0, "/app/src")
         from neuromarketing.main import create_app
@@ -116,12 +143,12 @@ class WebService:
 
 @app.cls(
     image=gpu_image,
-    gpu="A10G",
+    gpu="A100",
     secrets=[modal.Secret.from_name("neuromarketing-secrets")],
     volumes=VOLUMES,
     scaledown_window=5 * MINUTES,
     min_containers=0,
-    timeout=10 * MINUTES,
+    timeout=30 * MINUTES,
 )
 class GpuService:
     """Serves React frontend + FastAPI backend with real GPU inference."""
@@ -137,8 +164,10 @@ class GpuService:
         sys.path.insert(0, "/app/src")
 
     @modal.asgi_app()
-    def web(self) -> fastapi.FastAPI:
+    def web(self) -> object:
         import sys
+
+        import fastapi.staticfiles
 
         sys.path.insert(0, "/app/src")
         from neuromarketing.main import create_app
@@ -168,13 +197,12 @@ def download_model() -> None:
     Run once:  modal run modal_app.py::download_model
     """
     os.environ["HF_HOME"] = "/data/model-cache"
-    logger.info("Starting TRIBE v2 model download...")
+    token = os.environ.get("NM_HF_TOKEN")
     from huggingface_hub import snapshot_download
 
-    snapshot_download(
-        "facebook/tribev2",
-        cache_dir="/data/model-cache",
-        token=os.environ.get("NM_HF_TOKEN"),
-    )
+    for repo in ("facebook/tribev2", "meta-llama/Llama-3.2-3B"):
+        logger.info("Downloading %s ...", repo)
+        snapshot_download(repo, cache_dir="/data/model-cache", token=token)
+
     model_cache_vol.commit()
     logger.info("Model weights committed to volume.")

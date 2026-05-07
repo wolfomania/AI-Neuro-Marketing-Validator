@@ -16,10 +16,27 @@ async function request<T>(url: string, options?: RequestInit): Promise<ApiRespon
   try {
     const headers = { ...authHeaders(), ...options?.headers }
     const response = await fetch(`${API_BASE}${url}`, { ...options, headers })
-    const body: unknown = await response.json()
+
+    const text = await response.text()
+    let body: unknown = null
+    try {
+      body = text ? JSON.parse(text) : null
+    } catch {
+      // Non-JSON body (e.g. Modal proxy error, gateway timeout HTML/text).
+      if (!response.ok) {
+        return {
+          success: false,
+          error: `Server error ${response.status}: ${text.slice(0, 200) || 'no body'}`,
+        }
+      }
+      return {
+        success: false,
+        error: 'Server returned non-JSON response.',
+      }
+    }
 
     if (!response.ok) {
-      const errorBody = body as { detail?: string }
+      const errorBody = (body ?? {}) as { detail?: string }
       return {
         success: false,
         error: errorBody.detail ?? `Request failed with status ${response.status}`,

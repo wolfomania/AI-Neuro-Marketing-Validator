@@ -64,8 +64,15 @@ class AccessGuardMiddleware(BaseHTTPMiddleware):
         if not self._config.is_enabled:
             return await call_next(request)
 
+        path = request.url.path
+
+        # Only guard API routes — static assets (frontend) must load freely
+        # so the user can reach the page to set localStorage.
+        if not path.startswith("/api/"):
+            return await call_next(request)
+
         # Always allow health check
-        if request.url.path == "/api/health":
+        if path == "/api/health":
             return await call_next(request)
 
         # --- IP check ---
@@ -78,15 +85,20 @@ class AccessGuardMiddleware(BaseHTTPMiddleware):
                     content={"detail": "Access denied: IP not allowed."},
                 )
 
-        # --- Token check ---
+        # --- Token check (Authorization: Bearer <token> OR ?token=<token>) ---
         if self._config.access_token:
             auth_header = request.headers.get("authorization", "")
-            if not auth_header.startswith("Bearer "):
+            token = ""
+            if auth_header.startswith("Bearer "):
+                token = auth_header[len("Bearer "):]
+            else:
+                token = request.query_params.get("token", "")
+
+            if not token:
                 return JSONResponse(
                     status_code=401,
                     content={"detail": "Missing Bearer token."},
                 )
-            token = auth_header[len("Bearer "):]
             if token != self._config.access_token:
                 return JSONResponse(
                     status_code=401,

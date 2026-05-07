@@ -51,3 +51,7 @@ cache/
 *.avi
 *.mov
 *.mkv
+
+# ── OMC tool state ──
+.omc/
+local-dump/

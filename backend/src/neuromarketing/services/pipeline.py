@@ -131,7 +131,11 @@ async def run_analysis_pipeline(
                 "file_size_bytes": video_meta.file_size_bytes,
             },
             "report": report.model_dump() if hasattr(report, "model_dump") else report,
-            "brain_images": list(prediction.plot_paths.keys()),
+            "brain_images": [
+                name
+                for name, path in prediction.plot_paths.items()
+                if path and Path(path).exists()
+            ],
         }
 
         storage.save_result(results_dir, analysis_id, result_data)
