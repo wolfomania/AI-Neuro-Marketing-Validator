@@ -85,16 +85,20 @@ def get_image_path(
 ) -> Path | None:
     """Return path to an image file if it exists, else None.
 
-    Resolves candidate path and verifies it doesn't escape the analysis directory
+    Checks both the analysis root and the plots/ subdirectory.
+    Verifies the resolved path stays within the analysis directory
     (path traversal protection).
     """
     analysis_dir = (results_dir / analysis_id).resolve()
-    candidate = (analysis_dir / image_name).resolve()
-    if not str(candidate).startswith(str(analysis_dir)):
-        return None
-    if not candidate.exists():
-        return None
-    return candidate
+    candidates = [
+        analysis_dir / image_name,
+        analysis_dir / "plots" / image_name,
+    ]
+    for candidate in candidates:
+        resolved = candidate.resolve()
+        if str(resolved).startswith(str(analysis_dir)) and resolved.exists():
+            return resolved
+    return None
 
 
 def cleanup_upload(upload_dir: Path, analysis_id: str) -> None:

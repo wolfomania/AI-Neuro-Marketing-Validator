@@ -1,0 +1,7 @@
+{
+  "tool_name": "WebFetch",
+  "tool_input_preview": "{\"url\":\"https://huggingface.co/facebook/TRIBE\",\"prompt\":\"What is this model? How to install/use it? Any pip install instructions or GitHub link? What are the inputs/outputs?\"}",
+  "error": "Request failed with status code 401",
+  "timestamp": "2026-05-07T16:22:01.528Z",
+  "retry_count": 1
+}

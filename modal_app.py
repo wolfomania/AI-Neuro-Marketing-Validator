@@ -6,8 +6,11 @@ Usage:
     modal run modal_app.py::download_model   # one-time model weight download
 """
 
+import logging
 import os
 from pathlib import Path
+
+logger = logging.getLogger(__name__)
 
 import fastapi
 import fastapi.staticfiles
@@ -56,11 +59,12 @@ image = (
     .add_local_dir(str(frontend_dist), remote_path="/assets")
 )
 
-# GPU image adds torch and ML deps (used only by GPU-enabled functions)
+# GPU image adds torch, ML, and tribev2 deps (used only by GPU-enabled functions)
 gpu_image = image.pip_install(
     "torch>=2.5.0,<2.7.0",
     "huggingface-hub>=0.20.0",
     "transformers>=4.40.0",
+    "tribev2[plotting] @ git+https://github.com/facebookresearch/tribev2.git",
 )
 
 MINUTES = 60
@@ -164,13 +168,13 @@ def download_model() -> None:
     Run once:  modal run modal_app.py::download_model
     """
     os.environ["HF_HOME"] = "/data/model-cache"
-    print("Starting model download...")
-    # Uncomment when tribev2 is integrated:
-    # from huggingface_hub import snapshot_download
-    # snapshot_download(
-    #     "facebook/tribev2",
-    #     cache_dir="/data/model-cache",
-    #     token=os.environ.get("NM_HF_TOKEN"),
-    # )
+    logger.info("Starting TRIBE v2 model download...")
+    from huggingface_hub import snapshot_download
+
+    snapshot_download(
+        "facebook/tribev2",
+        cache_dir="/data/model-cache",
+        token=os.environ.get("NM_HF_TOKEN"),
+    )
     model_cache_vol.commit()
-    print("Model weights committed to volume.")
+    logger.info("Model weights committed to volume.")

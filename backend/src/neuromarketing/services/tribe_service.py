@@ -84,8 +84,11 @@ class TribeService:
         timestep_dur = total_duration / n_timesteps if n_timesteps > 0 else 0.0
 
         # Step 6: Build RoiActivation list for top K
+        # get_topk_rois returns list[str] (ROI names only, no values)
         top_rois = []
-        for roi_name, mean_val in top_k_raw:
+        for roi_name in top_k_raw:
+            roi_name = str(roi_name)
+            mean_val = all_roi_means.get(roi_name, 0.0)
             vertex_indices = hcp_labels.get(roi_name, np.array([]))
             if len(vertex_indices) > 0:
                 roi_timeseries = preds[:, vertex_indices].mean(axis=1)
@@ -93,17 +96,17 @@ class TribeService:
                 peak_val = float(roi_timeseries[peak_idx])
                 peak_time = peak_idx * timestep_dur
             else:
-                peak_val = float(mean_val)
+                peak_val = mean_val
                 peak_time = 0.0
 
             top_rois.append(
                 RoiActivation(
                     name=roi_name,
                     full_name=roi_name,
-                    mean_activation=float(mean_val),
+                    mean_activation=mean_val,
                     peak_activation=peak_val,
                     peak_time_seconds=round(peak_time, 2),
-                    percentile_rank=_percentile(float(mean_val)),
+                    percentile_rank=_percentile(mean_val),
                 )
             )
 
